@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:resx="clr-namespace:XCTLocalizationDemo.Resx"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              xmlns:vm="clr-namespace:XCTLocalizationDemo"
              x:Class="XCTLocalizationDemo.MainPage">
 
@@ -11,11 +11,11 @@
     
     <StackLayout Spacing="20">
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="{x:Static resx:AppResources.Welcome}" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="{xct:Translate Welcome}" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="{x:Static resx:AppResources.AppDescription}" FontSize="16" Padding="30,0,30,0"/>
-        <Button Text="{x:Static resx:AppResources.ChangeLanguage}" Command="{Binding ChangeLanguageCommand}" />
-        <Label Text="{Binding Version}" FontSize="16" HorizontalTextAlignment="Center"/>
+        <Label Text="{xct:Translate AppDescription}" FontSize="16" Padding="30,0,30,0"/>
+        <Button Text="{xct:Translate ChangeLanguage}" Command="{Binding ChangeLanguageCommand}" />
+        <Label Text="{Binding Version.Localized}" FontSize="16" HorizontalTextAlignment="Center"/>
     </StackLayout>
 
 </ContentPage>

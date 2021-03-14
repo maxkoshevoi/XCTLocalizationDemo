@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using Xamarin.CommunityToolkit.Helpers;
+using Xamarin.Forms;
+using XCTLocalizationDemo.Resx;
 
 namespace XCTLocalizationDemo
 {
@@ -7,6 +9,9 @@ namespace XCTLocalizationDemo
         public App()
         {
             InitializeComponent();
+
+            LocalizationResourceManager.Current.PropertyChanged += (_, _) => AppResources.Culture = LocalizationResourceManager.Current.CurrentCulture;
+            LocalizationResourceManager.Current.Init(AppResources.ResourceManager);
 
             MainPage = new MainPage();
         }
