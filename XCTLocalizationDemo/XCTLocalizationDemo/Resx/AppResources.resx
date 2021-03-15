@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDescription" xml:space="preserve">
-    <value>This app demonstrates how change language at runtime using Xamarin.CommunityToolkit</value>
+    <value>This app demonstrates how to change language at runtime using Xamarin.CommunityToolkit</value>
   </data>
   <data name="English" xml:space="preserve">
     <value>English</value>

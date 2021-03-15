@@ -61,7 +61,7 @@ namespace XCTLocalizationDemo.Resx {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This app demonstrates how change language at runtime using Xamarin.CommunityToolkit.
+        ///   Looks up a localized string similar to This app demonstrates how to change language at runtime using Xamarin.CommunityToolkit.
         /// </summary>
         internal static string AppDescription {
             get {

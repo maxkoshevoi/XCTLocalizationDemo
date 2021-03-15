@@ -21,12 +21,17 @@ namespace XCTLocalizationDemo
             (() => AppResources.Ukrainian, "uk"),
         };
 
+        public LocalizedString CurrentLanguage { get; }
+
         public LocalizedString Version { get; } = new(() => string.Format(AppResources.Version, AppInfo.VersionString));
 
         public ICommand ChangeLanguageCommand { get; }
 
         public MainViewModel()
         {
+            CurrentLanguage = new(() => languageMapping.Single(m => m.value == LocalizationResourceManager.Current.CurrentCulture.TwoLetterISOLanguageName).name());
+            //CurrentLanguage = new(() => LocalizationResourceManager.Current.CurrentCulture.DisplayName);
+            
             ChangeLanguageCommand = new AsyncCommand(ChangeLanguage);
         }
 

@@ -11,7 +11,7 @@
     
     <StackLayout Spacing="20">
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="{xct:Translate Welcome}" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="{Binding CurrentLanguage.Localized}" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Label Text="{xct:Translate AppDescription}" FontSize="16" Padding="30,0,30,0"/>
         <Button Text="{xct:Translate ChangeLanguage}" Command="{Binding ChangeLanguageCommand}" />
