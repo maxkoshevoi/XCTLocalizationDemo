@@ -1,7 +1,7 @@
 # XCTLocalizationDemo
 App localization demo using Xamarin.CommunityToolkit
 
-See video for more info: `do be added`
+See video for more info: https://www.youtube.com/watch?v=wyKKa09z9VQ
 
 ## How to use XCT localization?
 
