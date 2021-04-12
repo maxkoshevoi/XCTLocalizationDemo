@@ -29,10 +29,16 @@ namespace XCTLocalizationDemo
 
         public MainViewModel()
         {
-            CurrentLanguage = new(() => languageMapping.Single(m => m.value == LocalizationResourceManager.Current.CurrentCulture.TwoLetterISOLanguageName).name());
+            CurrentLanguage = new(GetCurrentLanguageName);
             //CurrentLanguage = new(() => LocalizationResourceManager.Current.CurrentCulture.DisplayName);
-            
+
             ChangeLanguageCommand = new AsyncCommand(ChangeLanguage);
+        }
+
+        private string GetCurrentLanguageName()
+        {
+            var (knownName, _) = languageMapping.SingleOrDefault(m => m.value == LocalizationResourceManager.Current.CurrentCulture.TwoLetterISOLanguageName);
+            return knownName != null ? knownName() : LocalizationResourceManager.Current.CurrentCulture.DisplayName;
         }
 
         async Task ChangeLanguage()
