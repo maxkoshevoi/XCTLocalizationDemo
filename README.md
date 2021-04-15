@@ -1,8 +1,10 @@
 # XCTLocalizationDemo
 App localization demo using Xamarin.CommunityToolkit
 
-See video for more info: https://www.youtube.com/watch?v=wyKKa09z9VQ <br />
-Great extension to manage resx-based resources: https://marketplace.visualstudio.com/items?itemName=TomEnglert.ResXManager
+## Useful links
+- Video demonstration of this app: https://www.youtube.com/watch?v=wyKKa09z9VQ
+- More info on Xamarin app localization: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text
+- Great extension to manage resx-based resources: https://marketplace.visualstudio.com/items?itemName=TomEnglert.ResXManager
 
 ## How to use XCT localization?
 
